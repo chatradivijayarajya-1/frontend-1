@@ -1,0 +1,18 @@
+{
+  "name": "finaltry",
+  "version": "1.0.0",
+  "description": "Final try project using Vite",
+  "main": "auth.js",
+  "scripts": {
+    "dev": "npx vite",
+    "build": "npx vite build",
+    "preview": "npx vite preview",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^7.1.7"
+  }
+}

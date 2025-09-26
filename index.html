@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo" class="navbar-logo">
+                </div>
+                <div class="nav-items">
+                    <a href="index.html" class="nav-item active">Home</a>
+                    <a href="explore.html" class="nav-item"><span class="nav-icon"> 
+                      <svg viewBox="0 0 24 24" fill="none" stroke="#262626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-icon"><circle cx="12" cy="12" r="10"/><polygon points="16 12 12 8 8 12 12 16 16 12"/></svg>
+                    </span>Explore</a>
+                    <a href="profile.html" class="nav-item">Profile</a>
+                    <a href="create.html" class="nav-item">Post</a>
+                    <a href="auth.html" class="nav-item" style="margin-left:18px;font-weight:600;">Login</a>
+                </div>
+            </div>
+        </nav>
+        <main class="main-content home-layout">
+            <section class="feed-section" id="feedSection">
+                <!-- Feed posts will be rendered here by JS -->
+            </section>
+            <aside class="sidebar">
+                <div class="sidebar-profile">
+                    <img id="sidebarProfilePic" src="" class="sidebar-profile-pic" alt="Profile Pic">
+                    <div>
+                        <strong>meow</strong><br>
+                        <span style="font-size:12px;color:#888;">Your profile</span>
+                    </div>
+                </div>
+                <div class="sidebar-suggestions">
+                    <div class="sidebar-suggestions-header">
+                        Suggestions for you <a href="#" style="float:right;font-size:12px;">See all</a>
+                    </div>
+                    <div id="suggestionsList"></div>
+                </div>
+            </aside>
+        </main>
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
